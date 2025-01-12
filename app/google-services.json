@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "204243413508",
+    "firebase_url": "https://esgiugfuhwaf-default-rtdb.firebaseio.com",
+    "project_id": "esgiugfuhwaf",
+    "storage_bucket": "esgiugfuhwaf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204243413508:android:263a8921410826f7196351",
+        "android_client_info": {
+          "package_name": "fsre.sum.ba.toplaw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204243413508-h6staorueijvuupprmvvcgvu8j41lltj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGJI333y2LVKdKxzNzwRwL46p5Q_-zlxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204243413508-h6staorueijvuupprmvvcgvu8j41lltj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
