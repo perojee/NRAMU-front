@@ -66,24 +66,24 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/toggleLeft"
+            android:id="@+id/toggleRight"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/toggle_left_background"
             app:backgroundTint="@null"
-            android:text="Register"
+            android:text="Prijava"
             android:textColor="@color/white"
             android:textSize="16sp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/toggleRight"
+            android:id="@+id/toggleLeft"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/toggle_right_background"
             app:backgroundTint="@null"
-            android:text="Login"
+            android:text="Registracija"
             android:textColor="@color/white"
             android:textSize="16sp" />
     </LinearLayout>

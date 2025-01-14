@@ -24,6 +24,7 @@ com-google-firebase-firebase-auth = { module = "com.google.firebase:firebase-aut
 firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
 firebase-bom-v3270 = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBomVersion" }
 firebase-config = { module = "com.google.firebase:firebase-config" }
+
 firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
 firebase-database = { module = "com.google.firebase:firebase-database" }
 firebase-firestore = { module = "com.google.firebase:firebase-firestore" }

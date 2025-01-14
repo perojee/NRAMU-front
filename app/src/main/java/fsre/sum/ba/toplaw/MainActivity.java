@@ -55,27 +55,27 @@ public class MainActivity extends AppCompatActivity {
 
     private void setInitialState() {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragmentContainer, new RegisterFragment())
+                .replace(R.id.fragmentContainer, new LoginFragment())
                 .commit();
         toggleLeft.setSelected(true);
         toggleRight.setSelected(false);
     }
 
-    private void switchToRegisterFragment() {
+    private void switchToLoginFragment() {
         toggleLeft.setSelected(true);
         toggleRight.setSelected(false);
         getSupportFragmentManager().beginTransaction()
                 .setCustomAnimations(R.anim.slide_in_left, R.anim.slide_out_right)
-                .replace(R.id.fragmentContainer, new RegisterFragment())
+                .replace(R.id.fragmentContainer, new LoginFragment())
                 .commit();
     }
 
-    private void switchToLoginFragment() {
+    private void switchToRegisterFragment() {
         toggleLeft.setSelected(false);
         toggleRight.setSelected(true);
         getSupportFragmentManager().beginTransaction()
                 .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left)
-                .replace(R.id.fragmentContainer, new LoginFragment())
+                .replace(R.id.fragmentContainer, new RegisterFragment())
                 .commit();
     }
 }

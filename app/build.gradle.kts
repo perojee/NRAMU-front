@@ -1,7 +1,8 @@
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.google.gms.google.services)
-
+    id("com.google.firebase.crashlytics")
 }
 
 android {
@@ -18,8 +19,24 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("/home/user/.android/debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+
+
+    }
+
     buildTypes {
+        debug {
+            signingConfig = signingConfigs.getByName("debug")
+        }
         release {
+
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -27,6 +44,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -36,10 +54,11 @@ android {
 dependencies {
     implementation(platform(libs.firebase.bom.v3270)) // BOM for automatic versioning
     implementation (libs.com.google.firebase.firebase.auth)
+    implementation(libs.firebase.crashlytics)
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.messaging)
     implementation(libs.google.firebase.analytics)
-
+    implementation(libs.firebase.analytics)
     implementation(libs.firebase.config)
     implementation(libs.firebase.database)
     implementation(libs.play.services.auth)
